@@ -1,0 +1,205 @@
+body {
+    font-family: 'Century Gothic', sans-serif;
+
+    margin: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#container {
+    position: absolute;
+
+    width: 100%;
+}
+
+#info-text {
+    margin-bottom: 3%;
+
+    text-align: center;
+}
+
+#info-text p, span {
+    font-size: 150%;
+}
+
+.hidden-info {
+    transition-duration: 1s;
+
+    opacity: 0;
+}
+
+.show-info {
+    transition-duration: 1s;
+
+    opacity: 1;
+}
+
+#maze-container {
+    position: relative;
+
+    width: 600px;
+    height: 360px;
+    margin: auto;
+}
+
+#hint-info {
+    font-size: 110%;
+    font-size: 115%;
+
+    position: absolute;
+    left: 50%;
+
+    width: 680px;
+    margin-left: -340px;
+}
+
+.wall {
+    background-color: rgb(238, 238, 238);
+}
+
+.wall-hit {
+    background-color: red;
+}
+
+#wall-container1 {
+    height: 60px;
+}
+
+#wall-container1 .wall:nth-child(2), #wall-container1 .wall-hit:nth-child(2) {
+    float: left;
+
+    width: 244px;
+    height: 56px;
+
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container1 .wall:nth-child(1), #wall-container1 .wall:nth-child(3), #wall-container1 .wall-hit:nth-child(1), #wall-container1 .wall-hit:nth-child(3) {
+    float: left;
+
+    width: 176px;
+    height: 58px;
+
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container1 .wall:nth-child(1), #wall-container1 .wall-hit:nth-child(1) {
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container1 .wall:nth-child(3), #wall-container1 .wall-hit:nth-child(3) {
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container2 {
+    height: 180px;
+}
+
+#wall-container2 .wall, #wall-container2 .wall-hit {
+    width: 176px;
+    height: 178px;
+
+    border-right: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container2 .wall:nth-child(1), #wall-container2 .wall-hit:nth-child(1) {
+    float: left;
+}
+
+#wall-container2 .wall:nth-child(2), #wall-container2 .wall-hit:nth-child(2) {
+    float: right;
+}
+
+#start-point, #end-point {
+    font-family: Arial, sans-serif;
+    font-size: 250%;
+
+    width: 50px;
+    height: 50px;
+    margin: 3px 0;
+
+    cursor: pointer;
+    text-align: center;
+
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#start-point {
+    float: left;
+
+    background-color: rgb(135, 255, 135);
+}
+
+#wall-container3 {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+
+    width: 120px;
+    height: 180px;
+    margin-left: -60px;
+}
+
+#wall-container3 .wall, #wall-container3 .wall-hit {
+    width: 116px;
+    height: 178px;
+
+    border-top: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+#end-point {
+    float: right;
+
+    background-color: rgb(135, 135, 255);
+}
+
+#wall-container4 {
+    position: absolute;
+    bottom: 0;
+
+    width: 600px;
+    height: 60px;
+}
+
+#wall-container4 .wall:nth-child(1), #wall-container4 .wall:nth-child(3), #wall-container4 .wall-hit:nth-child(1), #wall-container4 .wall-hit:nth-child(3) {
+    float: left;
+
+    width: 240px;
+    height: 56px;
+
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container4 .wall:nth-child(1), #wall-container4 .wall-hit:nth-child(1) {
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container4 .wall:nth-child(3), #wall-container4 .wall-hit:nth-child(3) {
+    border-right: 2px solid rgb(0, 0, 0);
+}
+
+#wall-container4 .wall:nth-child(2), #wall-container4 .wall-hit:nth-child(2) {
+    float: left;
+
+    width: 116px;
+    height: 58px;
+
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#wall-example {
+    width: 121px;
+    height: 31px;
+    margin: auto;
+
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+}
